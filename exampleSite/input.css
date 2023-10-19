@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+	.insert-link {
+		@apply before:absolute before:content-[''] before:z-10 before:top-0 before:right-0 before:left-0 before:bottom-0 before:pointer-events-auto
+	}
+}
+
+@layer utilities {
+
+	.close {
+		display: none;
+	}
+
+	.open {
+		display: block;
+	}
+	
+}

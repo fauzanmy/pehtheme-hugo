@@ -1,6 +1,6 @@
 # Pehtheme Hugo
 
-An open-source Hugo theme inspired by [Material Design v3](https://m3.material.io/), lovingly crafted using Tailwind CSS.
+Pehtheme Hugo is an open-source Hugo theme inspired by [Material Design v3](https://m3.material.io/), lovingly crafted using Tailwind CSS.
 
 ![Preview Pehtheme Hugo](https://raw.githubusercontent.com/fauzanmy/pehtheme-hugo/main/images/tn.png?raw=true)
 
@@ -10,17 +10,17 @@ Check out the live demo: [Pehtheme Hugo Live Demo](https://pehtheme-hugo.netlify
 
 ## Performance Testing
 
-To check the performance of the site using Pehtheme Hugo (Lite version), you can use the PageSpeed Insights tool. Click the button below to run a PageSpeed Insights test:
+To assess the performance of your website using Pehtheme Hugo, utilize the PageSpeed Insights tool. Click the button below to run a PageSpeed Insights test:
 
 [![PageSpeed Insights Test](https://pagespeed.web.dev/analysis/https-pehtheme-hugo-netlify-app/oj1ixy3kmu?form_factor=mobile)
 
 ## Features
 
-- Build with Tailwind CSS
-- Featured posts on the home page (To display feature posts on the homepage, the Hugo theme takes 'feature' tags data)
+- Built with Tailwind CSS
+- Featured posts displayed on the homepage (To showcase featured posts on the homepage, the Hugo theme uses `feature` tags data)
 - Horizontal menus, content tags list
 - No JavaScript dependencies
-- Vanila JS toggle button
+- Vanilla JS toggle button
 - Two-column blog layout
 - Sidebar with a list of recent posts
 - Sidebar Ads box
@@ -29,57 +29,82 @@ To check the performance of the site using Pehtheme Hugo (Lite version), you can
 
 To get started with Pehtheme Hugo, follow these steps:
 
-1. Install Hugo and create a new site. Refer to [Hugo's Quick Start Guide](https://gohugo.io/getting-started/quick-start/) for detailed instructions.
+1. Install Hugo and create a new site. For detailed instructions, refer to [Hugo's Quick Start Guide](https://gohugo.io/getting-started/quick-start/).
 
 2. Add Pehtheme Hugo to your project:
 
-    ```
+    ```bash
     $ git clone https://github.com/fauzanmy/pehtheme-hugo.git
     ```
 
-3. Copy the contents of the `exampleSite` directory to the root of your project.
+3. Simply copy the following 2 folders and 1 content from the `exampleSite` directory to the root of your project:
+
+    ```bash
+        exampleSite/
+        ├── assets/
+        ├── content/
+        └── hugo.toml
+    ``` 
 
 4. Start Hugo:
 
-    ```
-    hugo serve
+    ```bash
+    hugo server
     ```
 
 ## Configuration
 
-- paginate = '6' <- Set the desired number of home posts per page 
-- summaryLength = '20' <- 20 words are approximately 160 characters
-- googleAnalytics = ' ' <- Your GA-4 analitic
-- disqusShortname = ' ' <- Get from disqus
+You can configure the following settings in your Hugo project:
+
+- `paginate` = '6' (Set the desired number of home posts per page)
+- `summaryLength` = '20' (Approximately 160 characters for 20 words)
+- `googleAnalytics` = '' (Your GA-4 analytics code)
+- `disqusShortname` = '' (Your Disqus shortname)
 
 ## Custom Theme
 
-1. Your desktop must have NodeJS installed.
+1. Ensure you have NodeJS installed on your desktop.
 
-2. Copy the exampleSite into the root folder of your hugo project 
+2. Copy the Node.js configuration files from the `exampleSite` directory to the root of your Hugo project:
 
-3. Run
+    ```bash
+        exampleSite/
+        ├── package.json
+        ├── postcss.config.js
+        └── tailwind.config.js
+    ``` 
 
-    ```
+3. Additionally, copy the `exampleSite/input.css` file to the assets directory of your Hugo project.
+
+4. Run the following command to install necessary dependencies:
+
+    ```bash
     npm install
     ```
-4. 
+
+5. Customize the theme with Tailwind CSS using the following command:
+
+    ```bash
+    npm run dev
+    ```
+
+6. To build the website, execute the command:
+
+    ```bash
+    npm run build
+    ```
 
 ## License
 
-MIT Licensed, see [LICENSE](https://github.com/halogenica/Hugo-BeautifulHugo/blob/master/LICENSE).
+Pehtheme Hugo is MIT Licensed. For more details, see the [LICENSE](https://github.com/fauzanmy/pehtheme-hugo/blob/main/LICENSE) file.
 
 ## Logo Icon
 
-Egg fried icon
+Egg fried icon source: [Bootstrap Icons - Egg Fried](https://icons.getbootstrap.com/icons/egg-fried/)
 
-    ```
-    https://icons.getbootstrap.com/icons/egg-fried/
-    ```
+## Photo Credits
 
-## Credit Photo
-
-Image credit used in the live preview.
+Image credits used in the live preview:
 
     ```
     Images resource:
@@ -93,3 +118,12 @@ Image credit used in the live preview.
     - https://unsplash.com/photos/ydGRmobx5jA
     - https://pixabay.com/vectors/email-newsletter-email-marketing-3249062/
     ```
+
+## Support Development
+
+If you find Pehtheme Hugo useful and would like to support its development, you can make a donation. Your contribution will help in maintaining and improving this theme.
+
+- [Donate via PayPal](https://www.paypal.com/paypalme/fauzanmy)
+- [Donate via Saweria (Only Indonesia)](https://saweria.co/fauzanmy)
+
+Your support is greatly appreciated!
