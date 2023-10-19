@@ -4,28 +4,17 @@ licenselink = 'https://github.com/owner/repo/LICENSE'
 description = 'Theme description'
 
 # The home page of the theme, where the source can be found
-homepage = 'https://github.com/owner/repo'
+homepage = 'https://github.com/fauzanmy/pehtheme-hugo'
 
 # If you have a running demo of the theme
-demosite = 'https://owner.github.io/repo'
+demosite = 'https://pehtheme-hugo.netlify.app/'
 
 # Taxonomy terms
-tags = ['blog', 'company']
-features = ['some', 'awesome', 'features']
+tags = ['blog', 'responsive', 'light']
+features = ['tailwindcss', 'two-column', 'sidebar', 'horizontal-menu']
 
 # If the theme has multiple authors
 authors = [
-  {name = 'Name of author', homepage = 'Website of author'},
-  {name = 'Name of author', homepage = 'Website of author'}
+  {name = 'Fauzan My', homepage = 'https://fzn.my.id/'},
+  {name = 'InsertApps', homepage = 'https://insertapps.com/'}
 ]
-
-# If the theme has a single author
-[author]
-  name = 'Your name'
-  homepage = 'Your website'
-
-# If porting an existing theme
-[original]
-  author = 'Name of original author'
-  homepage = 'Website of original author'
-  repo = 'https://github.com/owner/repo'
