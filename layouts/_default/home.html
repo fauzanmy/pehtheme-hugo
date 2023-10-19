@@ -1,0 +1,93 @@
+{{ define "main" }}
+
+<!-- Feature post by tag = "feature" -->
+
+{{- range where .Site.RegularPages "Params.tags" "intersect" (slice "feature" ) | first 1 -}}
+<section class="block md:flex relative group p-6 lg:p-10 space-y-6 md:space-x-6 my-14 bg-zinc-100 rounded-3xl hover:bg-blue-100">
+  <figure class="basis-1/2 w-full aspect-video overflow-hidden rounded-2xl border">
+
+    {{- with $imgfeature := resources.Get .Params.image }}
+    {{ $imgfeature := $imgfeature.Resize "720x Q85" -}}
+
+    <img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $imgfeature.Permalink }}" alt="{{ $.Name }}" width="{{ $imgfeature.Width}}" height="{{ $imgfeature.Height }}">
+
+    {{- end }}
+  </figure>
+  <div class="basis-1/2 self-center">
+    <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold mb-4"><a class="before:content-[''] before:z-10 before:top-0 before:right-0 before:left-0 before:bottom-0 before:absolute before:pointer-events-auto" href="{{ .Permalink }}">{{ .Title}}</a></h2>
+    <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"><span class="font-bold">{{ .Date.Format "Jan 02, 2006" }}</span></time>
+  </div>
+</section>
+
+{{ end -}}
+
+<!-- / End feature post  -->
+
+<!-- Category Post -->
+
+<section class="mb-16">
+
+    {{ $cat := "astronomy" }}
+
+    <div class="flex items-center mb-6">
+
+      <h2 class="text-3xl md:text-4xl font-bold mr-auto">{{ $cat | humanize }}</h2>
+
+      <a class="border rounded-full py-2 px-4 md:px-6 hover:bg-blue-100" href="{{ printf "/categories/%s" $cat | absURL }}">View All</a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-10">
+
+    {{ range where .Site.RegularPages "Params.categories" "intersect" (slice $cat ) | first 3 }}
+
+      {{- partial "content/card" . -}}
+
+    {{ end }}
+
+    </div>
+
+  </section>
+
+<!-- / End category post --> 
+<hr class="my-8">
+<!-- Start recent post  -->
+
+  <section class="mb-16">
+
+    <div class="flex items-center mb-6">
+
+      <h2 class="text-3xl md:text-4xl font-bold mr-auto">Recent Post</h2>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-10">
+
+    {{ $paginator := .Paginate ( where site.RegularPages "Type" "in" site.Params.mainSections) }}
+
+    {{ range $paginator.Pages }}
+
+      {{- partial "content/card" . -}}
+
+    {{ end }}
+
+    </div>
+
+    <!-- Paginate here -->
+
+    <div class="flex items-center mt-10">
+      {{- if $paginator.HasPrev -}}
+        <a class="border rounded-full px-6 py-2 hover:bg-zinc-200 mr-auto" href="{{ $paginator.Prev.URL }}">← Previous</a>
+      {{- end -}}
+
+      {{- if $paginator.HasNext -}}
+        <a class="border rounded-full px-6 py-2 hover:bg-zinc-200" href="{{ $paginator.Next.URL }}">Next →</a>
+      {{- end -}}
+    </div>
+
+  </section>
+
+<!-- / End recent post  -->
+
+  {{- partial "content/newsletter.html" . -}}
+
+{{ end }}

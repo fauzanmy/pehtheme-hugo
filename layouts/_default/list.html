@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+{{- partial "content/breadcrumb.html" . -}}
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
+
+  <section class="md:col-span-2">
+
+    <h2 class="text-3xl font-bold mb-10">{{ .Title | humanize }}</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-4">
+
+      {{ range ( .Paginator 6 ).Pages }}
+      
+        {{- partial "content/card.html" . -}}
+
+      {{ end }}
+    
+    </div>
+
+    <!-- Paginate here -->
+
+    <div class="flex items-center mt-10">
+      {{- if .Paginator.HasPrev -}}
+        <a class="border rounded-full px-6 py-2 hover:bg-zinc-200 mr-auto" href="{{ .Paginator.Prev.URL }}">← Previous</a>
+      {{- end -}}
+
+      {{- if .Paginator.HasNext -}}
+        <a class="border rounded-full px-6 py-2 hover:bg-zinc-200" href="{{ .Paginator.Next.URL }}">Next →</a>
+      {{- end -}}
+    </div>
+  
+  </section>
+
+  <aside class="md:col-span-1">
+
+    {{- partial "content/aside.html" . -}}
+    
+  </aside>
+
+  </div>
+
+{{ end }}
