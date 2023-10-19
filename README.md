@@ -124,6 +124,6 @@ Image credits used in the live preview:
 If you find Pehtheme Hugo useful and would like to support its development, you can make a donation. Your contribution will help in maintaining and improving this theme.
 
 - [Donate via PayPal](https://www.paypal.com/paypalme/fauzanmy)
-- [Donate via Saweria (Only Indonesia)](https://saweria.co/fauzanmy)
+- [Donate via Saweria (Indonesian only)](https://saweria.co/fauzanmy)
 
 Your support is greatly appreciated!
