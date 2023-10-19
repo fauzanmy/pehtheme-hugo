@@ -1,43 +1,23 @@
-baseURL = 'https://pehtheme-hugo.netlify.app/'
+baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Pehtheme'
-theme = 'pehtheme-hugo'
+title = 'My New Hugo Site'
 
-paginate = '6' # <- Set the desired number of posts per page 
-summaryLength = '20' # <- 20 words are approximately 160 characters
-googleAnalytics = ' ' # <- Your GA-4
-disqusShortname = ' ' # <- Get form here : https://disqus.com
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
 
-[params]
-  # Meta description, not exceeding 160 characters, used for the meta description within the HTML head
-  description = 'Pehtheme Hugo Lite: A minimalist Hugo theme, built with TailwindCSS, for efficient performance and minimalism.'
-  mainSections = 'posts'
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
 
-[author]
-  name = 'Anthony Arphan'
-  bio = 'Debitis assumenda esse dignissimos aperiam delectus maxime tenetur repudiandae dolore'
-  avatar = '/images/nasa-astronaut-unsplash.jpg'
-  twitter = 'https://twitter.com/insertapps'
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
 
-[menu] # Menu management
-  [[menu.main]]
-    name = 'Home'
-    pageRef = '/'
-    weight = 10
-  [[menu.main]]
-    name = 'About'
-    pageRef = '/about'
-    weight = 15
-  [[menu.main]]
-    name = 'Tags'
-    pageRef = '/tags'
-    weight = 20
-  [[menu.main]]
-    name = 'Taxonomy'
-    pageRef = '/tags/space/'
-    weight = 25
-
-[module] # Directing the static folder to assets.
-  [[module.mounts]]
-    source = 'assets'
-    target = 'static'
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
