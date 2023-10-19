@@ -40,10 +40,10 @@ To get started with Pehtheme Hugo, follow these steps:
 3. Simply copy the following 2 folders and 1 content from the `exampleSite` directory to the root of your project:
 
     ```bash
-        exampleSite/
-        ├── assets/
-        ├── content/
-        └── hugo.toml
+    exampleSite/
+    ├── assets/
+    ├── content/
+    └── hugo.toml
     ``` 
 
 4. Start Hugo:
