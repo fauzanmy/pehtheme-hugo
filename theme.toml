@@ -1,6 +1,6 @@
 name = 'Pehtheme Hugo'
 license = 'MIT'
-licenselink = 'https://github.com/owner/repo/LICENSE'
+licenselink = 'https://github.com/fauzanmy/pehtheme-hugo/blob/main/LICENSE'
 description = 'Pehtheme Hugo : A minimalist Hugo theme built with TailwindCSS, for efficient performance and minimalism'
 
 # The home page of the theme, where the source can be found
