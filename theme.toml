@@ -10,11 +10,11 @@ homepage = 'https://github.com/fauzanmy/pehtheme-hugo'
 demosite = 'https://pehtheme-hugo.netlify.app/'
 
 # Taxonomy terms
-tags = ['blog', 'responsive', 'light']
+tags = ['blog', 'responsive', 'light', 'tailwindcss']
 features = ['tailwindcss', 'two-column', 'sidebar', 'horizontal-menu']
 
 # If the theme has multiple authors
-authors = [
-  {name = 'Fauzan My', homepage = 'https://fzn.my.id/'},
-  {name = 'InsertApps', homepage = 'https://insertapps.com/'}
-]
+
+[author]
+  name = 'Fauzan My'
+  homepage = 'https://fzn.my.id/'
