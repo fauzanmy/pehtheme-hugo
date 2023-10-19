@@ -23,6 +23,7 @@ To assess the performance of your website using Pehtheme Hugo, utilize the PageS
 - Vanilla JS toggle button
 - Two-column blog layout
 - Sidebar with a list of recent posts
+- Semantic HTML
 - Sidebar Ads box
 
 ## Installation

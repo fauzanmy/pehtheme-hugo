@@ -5,8 +5,8 @@ theme = 'pehtheme-hugo'
 
 paginate = '6' # <- Set the desired number of posts per page 
 summaryLength = '20' # <- 20 words are approximately 160 characters
-googleAnalytics = ' ' # <- Your GA-4
-disqusShortname = ' ' # <- Get form here : https://disqus.com
+googleAnalytics = 'G-MEASUREMENT_ID' # <- Your GA-4
+disqusShortname = 'your-disqus-shortname' # <- Get form here : https://disqus.com
 
 [params]
 	# Meta description, not exceeding 160 characters, used for the meta description within the HTML head
@@ -37,7 +37,10 @@ disqusShortname = ' ' # <- Get form here : https://disqus.com
 		pageRef = '/tags/space/'
 		weight = 25
 
-[module] # Directing the static folder to assets.
-	[[module.mounts]]
-    source = 'assets'
-    target = 'static'
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+  [module.mounts] # Directing the static folder to assets.
+  	source = 'assets'
+  	target = 'static'

@@ -1,8 +1,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Dynamic title and description for SEO -->
+<!-- Dynamic title for SEO -->
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<!-- Dynamic description for SEO -->
 <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.description }}{{ end }}">
 {{- partialCached "head/css.html" . -}}
-{{- partialCached "head/js.html" . -}}
 {{- partialCached "head/favicon.html" . -}}
+{{- /* template "_internal/google_analytics.html" . */ -}}

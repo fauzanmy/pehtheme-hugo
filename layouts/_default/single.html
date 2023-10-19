@@ -64,14 +64,13 @@
     </figure>
 
     <div id="content" class="mb-14">
-
       <!-- Content -->
 
       {{- .Content -}}
 
       <!-- Tags list -->
 
-      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+      {{- partial "terms.html" (dict "taxonomy" "tags" "page" .) -}}
 
     </div>
 
@@ -82,7 +81,9 @@
         <h2 class="text-xl font-semibold">Comment</h2>
 
         <p>Disqus comment here</p>
-        
+
+        {{- /* template "_internal/disqus.html" . */ -}}
+
       </div>
 
       <div id="author-box" class="my-8 md:my-14 border p-8 bg-zinc-100 rounded-2xl">
@@ -128,7 +129,7 @@
 
         <h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">Recommended for You</h2>
 
-        {{ $related := .Site.RegularPages.Related . | first 2 }}
+        {{- $related := .Site.RegularPages.Related . | first 2 -}}
 
         {{- with $related -}}
 
