@@ -12,7 +12,7 @@ Check out the live demo: [Pehtheme Hugo Live Demo](https://pehtheme-hugo.netlify
 
 To assess the performance of your website using Pehtheme Hugo, utilize the PageSpeed Insights tool. Click the button below to run a PageSpeed Insights test:
 
-[![PageSpeed Insights Test](https://pagespeed.web.dev/analysis/https-pehtheme-hugo-netlify-app/oj1ixy3kmu?form_factor=mobile)
+![PageSpeed Insights Test](https://pagespeed.web.dev/analysis/https-pehtheme-hugo-netlify-app/fp5zrw0iyl?form_factor=mobile)
 
 ## Features
 
