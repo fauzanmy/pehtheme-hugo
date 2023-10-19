@@ -74,7 +74,7 @@ You can configure the following settings in your Hugo project:
         └── tailwind.config.js
     ``` 
 
-3. Additionally, copy the `exampleSite/input.css` file to the assets directory of your Hugo project.
+3. Additionally, copy the `exampleSite/input.css` file to the `assets/input.css` directory of your Hugo project.
 
 4. Run the following command to install necessary dependencies:
 
