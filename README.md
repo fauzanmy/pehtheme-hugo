@@ -6,7 +6,7 @@ An open-source Hugo theme inspired by [Material Design v3](https://m3.material.i
 
 ## Live Demo
 
-Check out the live demo: [Pehtheme Hugo Live Demo](https://pehtheme-hugo-lite.netlify.app/)
+Check out the live demo: [Pehtheme Hugo Live Demo](https://pehtheme-hugo.netlify.app/)
 
 ## Performance Testing
 
