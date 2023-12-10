@@ -12,7 +12,7 @@ Check out the live demo: [Pehtheme Hugo Live Demo](https://pehtheme-hugo.netlify
 
 To assess the performance of your website using Pehtheme Hugo, utilize the PageSpeed Insights tool. Click the button below to run a PageSpeed Insights test:
 
-![PageSpeed Insights Test](https://pagespeed.web.dev/analysis/https-pehtheme-hugo-netlify-app/fp5zrw0iyl?form_factor=mobile)
+[PageSpeed Insights Test](https://pagespeed.web.dev/analysis/https-pehtheme-hugo-netlify-app/7gv9zedw83?form_factor=mobile)
 
 ## Features
 
@@ -119,12 +119,3 @@ Image credits used in the live preview:
     - https://unsplash.com/photos/ydGRmobx5jA
     - https://pixabay.com/vectors/email-newsletter-email-marketing-3249062/
     ```
-
-## Support Development
-
-If you find Pehtheme Hugo useful and would like to support its development, you can make a donation. Your contribution will help in maintaining and improving this theme.
-
-- [Donate via PayPal](https://www.paypal.com/paypalme/fauzanmy)
-- [Donate via Saweria (Indonesian only)](https://saweria.co/fauzanmy)
-
-Your support is greatly appreciated!
