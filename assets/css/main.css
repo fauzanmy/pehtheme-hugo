@@ -111,6 +111,11 @@ a {
   text-decoration: inherit;
 }
 
+/* <a> tags inside a <p> tag should be purple*/
+p a {
+  color: purple;
+}
+
 /*
 Add the correct font weight in Edge and Safari.
 */
@@ -660,11 +665,11 @@ video {
 }
 
 .prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"],[class~="not-prose"] *))::before {
-  content: open-quote;
+  content: none;
 }
 
 .prose :where(blockquote p:last-of-type):not(:where([class~="not-prose"],[class~="not-prose"] *))::after {
-  content: close-quote;
+  content: none;
 }
 
 .prose :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
