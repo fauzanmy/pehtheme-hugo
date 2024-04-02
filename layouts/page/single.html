@@ -27,11 +27,17 @@
 
 		</article>
 
-		<aside class="md:col-span-1">
 
-			{{- partial "content/aside.html" . -}}
+        <!-- Do not show asides if 'no-aside' param is true -->
+        {{ if not (isset .Params "no-aside") }}
+
+            <aside class="md:col-span-1">
+
+                {{- partial "content/aside.html" . -}}
 		
-		</aside>
+            </aside>
+
+        {{ end }}
 
 	</div>
 
