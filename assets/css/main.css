@@ -2148,7 +2148,7 @@ video {
 /* Dark mode styles */
 .dark-mode {
   /* Add your dark mode styles here */
-  background-color: #1a202c;
+  background-color: #141414;
   color: #f7fafc;
 }
 
@@ -2172,7 +2172,7 @@ video {
 }
 
 .dark-mode .bg-zinc-100 {
-  background-color: #141a24;
+  background-color: #19191a;
 }
 
 .dark-mode .hover\:bg-zinc-200:hover {
@@ -2231,7 +2231,7 @@ video {
 }
 
 .dark-mode #social-media a {
-  background-color: #2d3748;
+  background-color: #1e1e1f;
 }
 
 .dark-mode #social-media a:hover {
@@ -2242,3 +2242,6 @@ video {
   fill: #f7fafc;
 }
 
+.dark-mode .twitter-tweet {
+    background-color: #1a202c;
+}
