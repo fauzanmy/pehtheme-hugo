@@ -2245,3 +2245,53 @@ video {
 .dark-mode .twitter-tweet {
     background-color: #1a202c;
 }
+
+#menu-bar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    whitespace-nowrap;
+}
+
+/* Mobile styles */
+@media (max-width: 1920px) { /* Adjust the breakpoint as needed */
+    #menu-bar ul {
+        display: none; /* hides the menu initially */
+        flex-direction: column; /* stacks the menu items vertically */
+        list-style-type: none;
+        overflow-x: hidden;
+    }
+
+    #menu-bar.open #menu-list {
+        display: flex; /* shows the menu when 'open' class is added */
+        align-items: center;
+        text-align: center;
+    }
+
+    #menu-bar ul li {
+        width: 100%; /* optional, depending on your design */
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    #menu-bar ul li a {
+        display: block; /* Makes the link fill the li element */
+        width: 100%; /* Ensures the link is as wide as the li */
+        padding: 10px 10px; /* Adds padding for tap targets */
+        text-decoration: none; /* Optional: removes underline from links */
+        color: inherit; /* Keeps the text color consistent */
+        border: none; /* Removes any borders */
+        flex: 1;
+    }
+
+    .hamburger-button {
+        display: block; /* shows the toggle button on mobile */
+    }
+}
+
+.rounded-full.border.px-6.py-2.bg-zinc-100.hover:bg-zinc-200 {
+    /* Styling for your menu items */
+}
