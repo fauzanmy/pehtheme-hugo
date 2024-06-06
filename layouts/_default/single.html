@@ -47,18 +47,25 @@
 
     <figure id="featureimage" class="rounded-xl aspect-video">
 
-      {{- with $image := resources.Get ( .Params.image ) }}
+      {{- if .Params.image }}
 
-        {{- $image := $image.Resize "750x" }}
+        {{- if ( strings.HasPrefix .Params.image "http" ) }}
 
-      <img class="rounded-lg" src="{{ $image.Permalink }}" alt="{{ .Params.title }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+          <img class="rounded-lg" src="{{ .Params.image }}" alt="{{ .Params.title }}">
+
+        {{- else }}
+
+          {{- with $image := resources.Get .Params.image }}
+            {{- $image := $image.Resize "750x" }}
+            <img class="rounded-lg" src="{{ $image.Permalink }}" alt="{{ .Params.title }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+          {{- end }}
+
+        {{- end }}
 
       {{- end }}
 
       {{- if ( isset .Params "caption" ) }}
-
-      <figcaption class="text-center italic text-xs">{{ .Params.caption }}</figcaption>
-
+        <figcaption class="text-center italic text-xs">{{ .Params.caption }}</figcaption>
       {{- end }}
 
     </figure>
