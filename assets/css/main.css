@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: #2a2a2b;
   /* 2 */
 }
 
@@ -1335,15 +1335,12 @@ video {
 }
 
 .rounded {
-  border-radius: 0.25rem;
 }
 
 .rounded-2xl {
-  border-radius: 1rem;
 }
 
 .rounded-3xl {
-  border-radius: 1.5rem;
 }
 
 .rounded-full {
@@ -1351,11 +1348,9 @@ video {
 }
 
 .rounded-lg {
-  border-radius: 0.5rem;
 }
 
 .rounded-xl {
-  border-radius: 0.75rem;
 }
 
 .rounded-l-full {
@@ -1382,12 +1377,10 @@ video {
 
 .border-zinc-200 {
   --tw-border-opacity: 1;
-  border-color: rgb(228 228 231 / var(--tw-border-opacity));
 }
 
 .border-zinc-400 {
   --tw-border-opacity: 1;
-  border-color: rgb(161 161 170 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -2148,12 +2141,12 @@ video {
 /* Dark mode styles */
 .dark-mode {
   /* Add your dark mode styles here */
-  background-color: #141414;
+  background-color: #1a1b1c;
   color: #f7fafc;
 }
 
 .dark-mode p a {
-    color: #63b3ed;
+    color: #d98b0f;
 }
 
 .dark-mode h1,
@@ -2172,7 +2165,7 @@ video {
 }
 
 .dark-mode .bg-zinc-100 {
-  background-color: #19191a;
+  background-color: #161718;
 }
 
 .dark-mode .hover\:bg-zinc-200:hover {
@@ -2184,11 +2177,9 @@ video {
 }
 
 .dark-mode .border-zinc-200 {
-  border-color: #4a5568;
 }
 
 .dark-mode .border-zinc-400 {
-  border-color: #718096;
 }
 
 .dark-mode .prose {
