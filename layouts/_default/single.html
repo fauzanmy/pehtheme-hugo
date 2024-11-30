@@ -17,9 +17,9 @@
       
       <div id="writer" class="flex items-center space-x-4">
 
-        {{- $name := .Site.Author.name -}}
+        {{- $name := .Site.Params.Author.name -}}
 
-        {{- with $avatar := resources.Get .Site.Author.avatar }}
+        {{- with $avatar := resources.Get .Site.Params.Author.avatar }}
 
         <img class="w-12 h-12 bg-black rounded-full" src="{{ $avatar.Permalink }}" alt="{{ $name }} avatar" width="{{ $avatar.Width }}" height="{{ $avatar.Height }}">
 
@@ -27,7 +27,7 @@
         
         <ul class="flex items-center space-x-4 flex-nowrap whitespace-nowrap overflow-x-auto">
           
-          <li class="font-semibold my-2">{{ .Site.Author.name }}</li>
+          <li class="font-semibold my-2">{{ .Site.Params.Author.name }}</li>
           
           <li class="before:content-['•'] before:mr-2 before:opacity-50 my-2">
             {{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" -}}
@@ -95,11 +95,11 @@
 
       <div id="author-box" class="my-8 md:my-14 border p-8 bg-zinc-100 rounded-2xl">
 
-        <img class="w-20 h-20 rounded-full" src="{{ .Site.Author.avatar }}" alt="{{ .Site.Author.name }}">
+        <img class="w-20 h-20 rounded-full" src="{{ .Site.Params.Author.avatar }}" alt="{{ .Site.Params.Author.name }}">
 
-        <h2 class="text-xl font-bold my-4">Writter by : {{ .Site.Author.name }}</h2>
+        <h2 class="text-xl font-bold my-4">Writter by : {{ .Site.Params.Author.name }}</h2>
 
-        <p class="mb-4">{{ .Site.Author.bio }}</p>
+        <p class="mb-4">{{ .Site.Params.Author.bio }}</p>
 
         <ul class="flex flex-wrap space-x-4">
           <li>
