@@ -55,12 +55,20 @@ To get started with Pehtheme Hugo, follow these steps:
 
 ## Configuration
 
-You can configure the following settings in your Hugo project:
+You can configure the following settings for your Hugo project
+ by adding or modifying these lines in your config file `hugo.toml`:
 
-- `paginate` = '6' (Set the desired number of home posts per page)
-- `summaryLength` = '20' (Approximately 160 characters for 20 words)
-- `googleAnalytics` = '' (Your GA-4 analytics code)
-- `disqusShortname` = '' (Your Disqus shortname)
+summaryLength = 20 # (approximately 160 characters for 20 words)
+
+[services]
+  [services.googleAnalytics]
+    id = 'G-MEASUREMENT_ID' # (Your GA-4 analytics code)
+
+  [services.disqus]
+    shortname = 'shortname' # (Your Disqus shortname)
+
+[pagination]
+  pagerSize = 10 # (Set the desired number of home posts per page)
 
 ## Custom Theme
 
